@@ -1293,6 +1293,18 @@ em {
   color: var(--accent);
 }
 
+.footer-credit {
+  margin: 16px 0 0;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.site-footer .footer-credit a {
+  display: inline;
+  padding: 0;
+  color: var(--accent);
+}
+
 .footer-bottom {
   display: flex;
   flex-wrap: wrap;
