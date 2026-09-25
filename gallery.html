@@ -8,16 +8,25 @@
   <link rel="canonical" href="https://fourframes.in/gallery.html">
   <meta property="og:title" content="Gallery | Four Frames">
   <meta property="og:description" content="Moments we have framed — family, wedding, portrait, gifting, and wall décor.">
+  <meta name="theme-color" content="#1C1C1C">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Four Frames">
+  <meta property="og:image" content="https://fourframes.in/assets/images/1618221195710-dd6b41faaea6.jpg">
+  <meta property="og:url" content="https://fourframes.in/gallery.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Gallery | Four Frames">
+  <meta name="twitter:description" content="Moments we have framed — family, wedding, portrait, gifting, and wall décor.">
+  <meta name="twitter:image" content="https://fourframes.in/assets/images/1618221195710-dd6b41faaea6.jpg">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header on-hero" id="siteHeader">
     <div class="header-inner">
       <a class="brand" href="index.html" aria-label="Four Frames home">
@@ -39,7 +48,7 @@
         <a href="contact.html">Contact</a>
       </nav>
       <a class="btn btn-header" href="custom-framing.html">Frame Your Moment</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <button class="nav-toggle" id="navToggle" type="button" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </header>
   <nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
@@ -50,9 +59,10 @@
     <a class="active" href="gallery.html">Gallery</a>
     <a href="faq.html">FAQ</a>
     <a href="contact.html">Contact</a>
+    <a class="btn btn-light" href="custom-framing.html">Frame Your Moment</a>
   </nav>
 
-  <main>
+  <main id="main" tabindex="-1">
     <section class="page-hero">
       <img src="assets/images/1615873968403-89d8676d7290.jpg" alt="A curated gallery wall of framed photographs" width="2000" height="1100">
       <div class="container">
@@ -65,13 +75,13 @@
     <section class="section">
       <div class="container-wide">
         <div class="filter-bar">
-          <button type="button" class="is-active" data-filter="all">All</button>
-          <button type="button" data-filter="family">Family</button>
-          <button type="button" data-filter="wedding">Wedding</button>
-          <button type="button" data-filter="portrait">Portrait</button>
-          <button type="button" data-filter="gifting">Gifting</button>
-          <button type="button" data-filter="decor">Wall Décor</button>
-          <button type="button" data-filter="custom">Custom</button>
+          <button type="button" class="is-active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="family" aria-pressed="false">Family</button>
+          <button type="button" data-filter="wedding" aria-pressed="false">Wedding</button>
+          <button type="button" data-filter="portrait" aria-pressed="false">Portrait</button>
+          <button type="button" data-filter="gifting" aria-pressed="false">Gifting</button>
+          <button type="button" data-filter="decor" aria-pressed="false">Wall Décor</button>
+          <button type="button" data-filter="custom" aria-pressed="false">Custom</button>
         </div>
         <div class="masonry">
           <a class="gallery-item" data-category="family" data-lightbox data-caption="Family" href="assets/images/1511895426328-dc8714191300.jpg">
@@ -126,10 +136,10 @@
       </div>
     </section>
 
-    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Image preview">
       <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close">×</button>
       <figure>
-        <img id="lightboxImage" alt="">
+        <img id="lightboxImage" alt="Framed photograph" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7">
         <figcaption id="lightboxCaption"></figcaption>
       </figure>
     </div>
@@ -177,7 +187,7 @@
       <div>
         <h4>Visit</h4>
         <p>HB 37, RM Colony Main Road,<br>Dindigul - 624 001,<br>Tamil Nadu, India</p>
-        <a href="https://wa.me/918808801432" target="_blank" rel="noopener">WhatsApp 88088 01432</a>
+        <a href="https://wa.me/918808801432" target="_blank" rel="noopener noreferrer">WhatsApp 88088 01432</a>
         <a href="mailto:venkatvelraj@gmail.com">venkatvelraj@gmail.com</a>
       </div>
     </div>
@@ -187,7 +197,6 @@
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
